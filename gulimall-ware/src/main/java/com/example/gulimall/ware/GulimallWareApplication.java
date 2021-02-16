@@ -20,6 +20,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *  告诉mybatis-plus，我们这些sql映射文件都在哪里
  *
  */
+@EnableFeignClients(basePackages = "com.example.gulimall.ware.feign")
 @MapperScan("com.example.gulimall.ware.dao")
 @SpringBootApplication
 public class GulimallWareApplication {
